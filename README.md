@@ -78,20 +78,20 @@ Community-driven, self-hosted Exchange ActiveSync implementations, protocol engi
 
 ---
 
-## 📊 Protocol Feature Comparison
+## 📊 Protocol Feature Comparison 🔄
 
-| Implementation | EAS Version Support | Push Mechanism | Supported Backends | Remote Device Wipe | Provisioning / Policies | Autodiscover Support |
+| 🛠️ Implementation | 🏷️ EAS Version Support | ⚡ Push Mechanism | 🗄️ Supported Backends | 📲 Remote Device Wipe | 🛡️ Provisioning / Policies | 🔍 Autodiscover Support |
 |:---|:---:|:---:|:---|:---:|:---:|:---:|
-| **Microsoft Exchange** | 2.5 – 16.1 | Ping / DirectPush | Native Exchange Mailbox | ✅ Full | ✅ Comprehensive | ✅ Native XML / JSON |
-| **Alinto SOGo** | 2.5 – 14.1 | HTTP Ping (Hanging Sync) | IMAP, CalDAV, CardDAV, SQL | ✅ Supported | ✅ Supported | ✅ EAS Autodiscover |
-| **Z-Push** | 2.5 – 16.0 | HTTP Ping (Hanging Sync) | IMAP, CalDAV, CardDAV, Kopano | ✅ Supported | ✅ Supported | ✅ Autodiscover Handler |
-| **grommunio-sync** | 2.5 – 16.1 | Push Notification / Ping | grommunio Core / SQLite / MySQL | ✅ Supported | ✅ Supported | ✅ Full Autodiscover |
-| **Tolk (JMAP)** | 14.0 – 16.0 | Hanging Sync / Ping | JMAP RFC 8620/8621 (Stalwart) | ✅ Supported | ✅ Supported | ✅ Autodiscover |
-| **sync•gw** | 2.5 – 16.1 | Polling / Basic Ping | CalDAV, CardDAV, WebDAV | ⚠️ Partial | ⚠️ Basic | ⚠️ Manual Config |
+| **🏢 Microsoft Exchange** | 2.5 – 16.1 | 🚀 Ping / DirectPush | 📬 Native Exchange Mailbox | ✅ Full | ✅ Comprehensive | ✅ Native XML / JSON |
+| **🌐 Alinto SOGo** | 2.5 – 14.1 | ⏱️ HTTP Ping (Hanging Sync) | 📧 IMAP, CalDAV, CardDAV, SQL | ✅ Supported | ✅ Supported | ✅ EAS Autodiscover |
+| **⚡ Z-Push** | 2.5 – 16.0 | ⏱️ HTTP Ping (Hanging Sync) | 📧 IMAP, CalDAV, CardDAV, Kopano | ✅ Supported | ✅ Supported | ✅ Autodiscover Handler |
+| **💼 grommunio-sync** | 2.5 – 16.1 | 🔔 Push Notification / Ping | 🗃️ grommunio Core / SQLite / MySQL | ✅ Supported | ✅ Supported | ✅ Full Autodiscover |
+| **🚀 Tolk (JMAP)** | 14.0 – 16.0 | ⏱️ Hanging Sync / Ping | 📡 JMAP RFC 8620/8621 (Stalwart) | ✅ Supported | ✅ Supported | ✅ Autodiscover |
+| **🔌 sync•gw** | 2.5 – 16.1 | 🔄 Polling / Basic Ping | 📅 CalDAV, CardDAV, WebDAV | ⚠️ Partial | ⚠️ Basic | ⚠️ Manual Config |
 
 ---
 
-## 💡 Choosing the Right Synchronization Architecture
+## 💡 Choosing the Right Synchronization Architecture 🏗️
 
 ```
                     ┌──────────────────────────────────────────────┐
@@ -110,10 +110,10 @@ Community-driven, self-hosted Exchange ActiveSync implementations, protocol engi
   Lightweight Go proxy          Robust battle-tested bridges     or **HCL Traveler**
 ```
 
-- **Enterprise Groupware Replacement:** If deploying a turnkey self-hosted collaboration platform with native mobile push support, choose **[Alinto SOGo](https://github.com/Alinto/sogo)** or **[grommunio](https://github.com/grommunio/grommunio-sync)**.
-- **Existing Dovecot / Postfix / CalDAV Stack:** Deploy **[Z-Push](https://github.com/Z-Hub/Z-Push)** to expose an ActiveSync endpoint without changing your mail storage.
-- **Modern Standards-First Stacks:** If migrating to JMAP, utilize **[Tolk](https://github.com/RBogie/tolk-jmap)** to give native iOS and Android accounts instant access without duplicating storage.
-- **Cloud-to-Cloud Calendar & Contact Sync:** When no server modifications can be made, use **[SyncGene](https://www.syncgene.com/)** to automate cross-platform sync.
+- 🏢 **Enterprise Groupware Replacement:** If deploying a turnkey self-hosted collaboration platform with native mobile push support, choose **[Alinto SOGo](https://github.com/Alinto/sogo)** or **[grommunio](https://github.com/grommunio/grommunio-sync)**.
+- 📬 **Existing Dovecot / Postfix / CalDAV Stack:** Deploy **[Z-Push](https://github.com/Z-Hub/Z-Push)** to expose an ActiveSync endpoint without changing your mail storage.
+- ⚡ **Modern Standards-First Stacks:** If migrating to JMAP, utilize **[Tolk](https://github.com/RBogie/tolk-jmap)** to give native iOS and Android accounts instant access without duplicating storage.
+- ☁️ **Cloud-to-Cloud Calendar & Contact Sync:** When no server modifications can be made, use **[SyncGene](https://www.syncgene.com/)** to automate cross-platform sync.
 
 ---
 
